@@ -1,0 +1,35 @@
+/*
+css
+*/
+
+
+body {
+
+    color: blueviolet;
+    background-color: #2c3452;
+    
+}
+
+.corpo-da-pagina {
+
+    color: blueviolet;
+    background-color: #2c3452;
+
+}
+
+.div-conteudo-img {
+
+    color: antiquewhite;
+    text-align: center;
+    
+
+}
+
+#GRUPO_1 {
+    color:rgb(0, 217, 255);
+    
+    
+}
+a{
+    color: aliceblue;
+}
