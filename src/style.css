@@ -6,20 +6,20 @@ css
 body {
 
     color: blueviolet;
-    background-color: #2c3452;
+    background-color: #0037ff;
     
 }
 
 .corpo-da-pagina {
 
     color: blueviolet;
-    background-color: #2c3452;
+    background-color: #93B1A6;
 
 }
 
 .div-conteudo-img {
 
-    color: antiquewhite;
+    color: #F1F0E8;
     text-align: center;
     
 
@@ -36,7 +36,7 @@ a{
 }
 
 #borda{
-        border-radius: 150px ;
-        border-width: 200px; 
+        border-radius: 200px ;
+        
     
 }
