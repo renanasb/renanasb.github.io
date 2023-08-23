@@ -2,8 +2,8 @@
 
 body {
 
-    background: #96B6C5;
-    
+    background: #93B1A6;
+    text-align: center;
     
 }
 
@@ -16,19 +16,23 @@ font-size: 25px ;
 }
 
 .corpo-pg{
- color: #EEE0C9;
-
-
-
+ color: #040D12;
 }
+
+
+
+
 .borda{
 
     padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 80px;
-    border-style: solid ;
-    border-color: black;
+    border: 3px solid #5C8374;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+    
     
 }
 
@@ -37,8 +41,43 @@ font-size: 25px ;
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
+}
 
 
+#header{
+background-color: #5C8374;
+text-align: center;
+font-size: 30px;
+border-radius: 25px;
+margin-left: 500px;
+margin-right: 500px;
+}
+#text{
+    font-size: 30px;
+}
+#imagem{
+border-radius: 20px;
+width: 200px;
+height: 200px;
 
+}
+.botao{
+background-color: #d0d0d0;  
+height: 37px;
+width: 80px;
+border-radius: 20px;
+}
 
+a{
+   color: aliceblue; 
+}
+
+.button-group {
+    display: inline-block;
+    text-align: center;
+}
+
+.button-group .botao {
+    margin: auto;
+    padding: auto;
 }
