@@ -18,7 +18,7 @@ section{
     border-radius: 25px;
     margin-bottom: 25px;
     text-align: left;   
-
+    font-size: 25px;
 
 
 
@@ -51,9 +51,9 @@ a{
 }
 
 #borda{
-        border-radius: 200px ;
-        margin-left: 10px;
-      
+        border-radius: 10px ;
+        
+       
 }
 #header-index{
     background-color: #5C8374;
@@ -63,3 +63,7 @@ a{
     margin-left: 800px;
     margin-right: 800px;
     }
+    
+
+
+    
