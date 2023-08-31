@@ -1,0 +1,143 @@
+
+
+body {
+
+    background: #93B1A6;
+    text-align: center;
+    
+}
+body{
+padding: 0;
+margin: 0;
+
+
+
+}
+
+
+.font-text{
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px ;
+
+}
+
+.corpo-pg{
+ color: #040D12;
+}
+
+
+section{
+
+
+
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        border: 3px solid #5C8374;
+        border-radius: 25px;
+        margin-bottom: 25px;
+        text-align: left;  
+        background-color: #183D3D; 
+    
+}
+
+.margem{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+
+#header{
+background-color: #5C8374;
+text-align: center;
+font-size: 30px;
+border-radius: 25px;
+margin-left: 500px;
+margin-right: 500px;
+}
+#text{
+    font-size: 30px;
+}
+#imagem{
+border-radius: 20px;
+width: 200px;
+height: 200px;
+
+}
+.botao{
+background-color: #183D3D;  
+
+border-radius: 20px;
+
+
+}
+
+a{
+   color: aliceblue; 
+}
+
+.button-group {
+    display: inline-block;
+    text-align: center;
+}
+
+.button-group .botao {
+    margin: auto;
+    padding: auto;
+}
+#bot{
+    background-color: #d0d0d0;  
+    height: 60px;
+    width: 120px;
+    border-radius: 20px;
+    margin-left: 650px;
+
+
+}
+header {
+    background-color: #183D3D;
+    color: white;
+    height: 50px;
+    width: 100%;
+    
+}
+nav a {
+    color: inherit;
+    text-decoration: nome;
+    font-size: inherit;
+    margin-left: 30px;
+} 
+
+
+.logo{
+     text-align: left;
+    }
+
+.cardbox{
+background-color: rgb(35, 30, 22);
+box-shadow:  0px 4px 8px   rgba( 0, 0, 0, 0.1) ;
+border-radius: 8px;
+padding: 20px ;
+width: 300px;
+height: 200px;
+max-width: 300px;
+max-height: 200px;
+text-align: center;
+flex-shrink: 1;
+}    
+
+.cardbox-container{
+display: flex;
+gap: 28px;
+justify-content: center;
+align-items: center;
+
+
+
+
+
+}
