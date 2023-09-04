@@ -34,11 +34,10 @@ section{
         padding-top: 50px;
         padding-right: 30px;
         padding-bottom: 50px;
-        padding-left: 100px;
-            
+        padding-left: 100px;    
         margin-bottom: 25px;
         text-align: left;  
-        background-color: #183D3D; 
+      background-color: #183D3D; 
     
 }
 
@@ -113,7 +112,7 @@ nav a {
 
 
 .logo{
-     text-align: left;
+     text-align: center;
     }
 
 .cardbox{
