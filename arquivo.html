@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TROCA DE NOME </title>
+</head>
+
+<body>
+
+    <p id="P"></p>
+
+    <button onclick=" GetNome()">clique</button>
+    <script>
+        let nome = "Renan Alves De Souza Barbosa "
+        document.getElementById("P").innerText = nome;
+        let primeiroNome = nome.substring(0, 5);
+        let ultimoNome = nome.substring(21, 29)
+        function GetNome(primeiroNome,ultimoNome) {
+            return primeiroNome, ultimoNome;
+            console.log()
+        }
+
+    </script>
+</body>
+
+</html>
