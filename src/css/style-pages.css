@@ -142,6 +142,11 @@ width: 600px;
 margin-left: 666px;
 }
 #card-e-mail{
-   float:200px;
+   
+   margin-left:710px;
+}
+#color-text{
+    color: aliceblue;
+    font-size: 25px;
 }
 
