@@ -134,8 +134,14 @@ gap: 28px;
 justify-content: center;
 align-items: center;
 
-
-
-
-
 }
+
+
+#ajuste{
+width: 600px;    
+margin-left: 666px;
+}
+#card-e-mail{
+   float:200px;
+}
+
