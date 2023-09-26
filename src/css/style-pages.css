@@ -58,7 +58,24 @@ margin-left: 500px;
 margin-right: 500px;
 }
 #text{
-    font-size: 30px;
+    text-align: left;
+    color: #040D12;
+background-color:  rgba(227, 217, 217, 0.2);
+border-radius: 15px;
+padding: 10px;
+}
+#title{
+    font-size: 28px;
+    color: #040D12;
+    background-color: rgba(227, 217, 217, 0.2);
+    border-radius: 20px;
+    padding: 0;
+    
+    
+}
+.bordacarrossel{
+    border-radius: 20px;
+
 }
 #imagem{
 border-radius: 20px;
