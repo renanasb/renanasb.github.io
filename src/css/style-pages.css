@@ -167,9 +167,16 @@ margin-left: 666px;
     font-size: 25px;
 }
 
-.tabelacor{
-background-color: #183D3D;
+.tabela{
 
+text-align: center;
+background-color: #183D3D;
+color: #040D12;
+}
+#texttable{
+color: #fff;
 
 }
+
+
 
