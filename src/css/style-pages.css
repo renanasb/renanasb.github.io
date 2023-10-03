@@ -170,11 +170,19 @@ margin-left: 666px;
 .tabela{
 
 text-align: center;
-background-color: #183D3D;
+background-color: #5C8374;
 color: #040D12;
 }
 #texttable{
 color: #fff;
+
+
+
+}
+#cordefundotabela{
+margin-left: 200px;
+margin-right:200px ;
+
 
 }
 
