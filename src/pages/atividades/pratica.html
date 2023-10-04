@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATICA</title>
+</head>
+<body>
+<label for="idade"> Digite a idade </label>
+<input type="text" id="idade">
+<button onclick="vericarIdade()">salvar</button>
+<p id="result"></p>   
+
+
+
+
+
+
+
+
+<script>
+function vericarIdade(){
+let idade = document.getElementById('idade').value;
+let resultado = document.getElementById('result');
+
+
+if(idade < 18){
+    resultado.innerText = idade + " é menor de idade "
+} else if (idade >= 18 != 60){
+    resultado.innerText = idade + " é adulto  "
+} else if (idade >= 60 ){
+    
+}
+
+}
+
+</script>
+
+
+
+
+
+</body>
+</html>
