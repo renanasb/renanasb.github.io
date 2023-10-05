@@ -83,7 +83,8 @@
             }
         }
     </script>
-<br>
+
+
     <!-- ATIVIDADE NÚMERO 4 -->
     <label for="temperatura"> <b>Digite a temperatura :</b> </label><br>
     <input type="text" id="temperatura">
@@ -92,7 +93,8 @@
     <script>
         function vericarTemperatura() {
             let temperatura = parseInt(document.getElementById('temperatura').value);
-            let resultadoTp = parseInt(document.getElementById('resulttm'));
+            let resultadoTp = document.getElementById('resulttm');
+           
             if (temperatura < 20) {
                 resultadoTp.innerText = temperatura + " está frio "
             } else if (temperatura >= 20 && temperatura <= 25) {
@@ -101,9 +103,6 @@
                 resultadoTp.innerText = temperatura + " está quente  "
             }
         }
-
-
-
 
     </script>
 
