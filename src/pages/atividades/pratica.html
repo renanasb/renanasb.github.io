@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>PRATICA</title>
 </head>
+
 <body>
-<label for="idade"> Digite a idade </label>
-<input type="text" id="idade">
-<button onclick="vericarIdade()">salvar</button>
-<p id="result"></p>   
+
+    <!-- ATIVIDADE NUMERO 1 -->
+    <label for="idade"> <b>Digite a idade:</b> </label><br>
+    <input type="text" id="idade">
+    <button onclick="vericarIdade()">Verificar </button>
+    <p id="resultIdade"></p>
+    <script>
+        function vericarIdade() {
+            let idade = document.getElementById('idade').value;
+            let resultado = document.getElementById('resultIdade');
+
+
+            if (idade < 18) {
+                resultado.innerText = idade + " é menor de idade "
+            } else if (idade >= 18 && idade <= 29) {
+                resultado.innerText = idade + " é um jovem adulto  "
+            } else if (idade >= 30 && idade <= 59) {
+                resultado.innerText = idade + " é um adulto  "
+            } else if (idade >= 60) {
+                resultado.innerText = idade + " é um idoso  "
+
+            }
+
+        }
+
+
+
+
+    </script>
+
+    <!-- ATIVIDADE NUMERO 2 -->
+    <label for="numero"> <b>Digite um número:</b> </label><br>
+    <input type="number" id="numerox">
+    <input type="number" id="numeroy">
+    <button onclick="verificarNumeros()">Verificar</button>
+    <p id="resultNumero"></p>
+    <script>
+        function verificarNumeros() {
+            let numerox = parseInt(document.getElementById('numerox').value);
+            let numeroy = parseInt(document.getElementById('numeroy').value);
+            let resultado = document.getElementById('resultNumero');
+
+
+            if (numerox > numeroy) {
+                resultado.innerText = numerox + " é maior que  " + numeroy;
+            } else if (numeroy > numerox) {
+                resultado.innerText = numeroy + " é maior que " + numerox;
+            } else if (numerox == numerox) {
+                resultado.innerText = numeroy + " são iguais  " + numerox;
+            }
+
+        }
+
+    </script>
+
+    <!-- ATIVIDADE NÚMERO 3 -->
+    <label for="divisao"> <b>Digite o número a ser dividido :</b> </label><br>
+    <input type="text" id="divisaoA">
+    <input type="text" id="divisaoB">
+    <button onclick="vericarDivisao()">Verificar</button>
+    <p id="resultDivisao"></p>
+    <script>
+        function vericarDivisao() {
+            let nmrA = parseFloat(document.getElementById('divisaoA').value);
+            let nmrB = parseFloat(document.getElementById('divisaoB').value);
+            let resultDivisao = document.getElementById('resultDivisao');
+            if (nmrA % nmrB == 0) {
+                resultDivisao.innerText = nmrA + " é divisivel por  " + nmrB;
+            } else {
+                resultDivisao.innerText = nmrA + " não  é divisivel " + nmrB;
+            }
+        }
+    </script>
+<br>
+    <!-- ATIVIDADE NÚMERO 4 -->
+    <label for="temperatura"> <b>Digite a temperatura :</b> </label><br>
+    <input type="text" id="temperatura">
+    <button onclick="vericarTemperatura()">Verificar</button>
+    <p id="resulttm"></p>
+    <script>
+        function vericarTemperatura() {
+            let temperatura = parseInt(document.getElementById('temperatura').value);
+            let resultadoTp = parseInt(document.getElementById('resulttm'));
+            if (temperatura < 20) {
+                resultadoTp.innerText = temperatura + " está frio "
+            } else if (temperatura >= 20 && temperatura <= 25) {
+                resultadoTp.innerText = temperatura + " está agradável "
+            } else if (temperatura >= 26) {
+                resultadoTp.innerText = temperatura + " está quente  "
+            }
+        }
+
+
+
+
+    </script>
 
 
 
@@ -18,51 +114,6 @@
 
 
 
-<script>
-function vericarIdade(){
-let idade = document.getElementById('idade').value;
-let resultado = document.getElementById('result');
-
-
-if(idade < 18){
-    resultado.innerText = idade + " é menor de idade "
-} else if (idade >= 18 != 60){
-    resultado.innerText = idade + " é adulto  "
-} else if (idade >= 60 ){
-    
-}
-
-}
-
-</script>
-
-<!-- ATIVIDADE NUMERO 2 -->
-
-<label for="numero"> Digite um número  </label>
-<input type="number" id="numerox">
-<input type="number" id="numeroy">
-<button onclick="verificarNumeros()">Verificar</button>
-<p id="result"></p> 
-
-
-<script>
-function verificarNumeros(){
-let numerox = document.getElementById('numerox').value ;
-let numeroy = document.getElementById('numeroy').value ;
-let resultado  = document.getElementById('result ');
-
-
-if(numerox > numeroy){
-    resultado.innerText = numerox + " é mmaior  que " + numeroy
-} else if (){
-    resultado.innerText = idade + " é adulto  "
-} else if (idade >= 60 ){
-    
-}
-
-}
-
-</script>
 
 
 
@@ -70,5 +121,18 @@ if(numerox > numeroy){
 
 
 
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
