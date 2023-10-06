@@ -87,14 +87,14 @@
 
     <!-- ATIVIDADE NÚMERO 4 -->
     <label for="temperatura"> <b>Digite a temperatura :</b> </label><br>
-    <input type="text" id="temperatura">
+    <input type="number" id="temperatura">
     <button onclick="vericarTemperatura()">Verificar</button>
     <p id="resulttm"></p>
     <script>
         function vericarTemperatura() {
             let temperatura = parseInt(document.getElementById('temperatura').value);
             let resultadoTp = document.getElementById('resulttm');
-           
+
             if (temperatura < 20) {
                 resultadoTp.innerText = temperatura + " está frio "
             } else if (temperatura >= 20 && temperatura <= 25) {
@@ -105,6 +105,215 @@
         }
 
     </script>
+    <!-- ATIVIDADE NÚMERO 5 -->
+
+    <label for="MateriaA"> <b>Português :</b> </label><br>
+    <input type="number" id="bimestre1p">
+    <input type="number" id="bimestre2p">
+    <input type="number" id="bimestre3p"><br>
+    <button onclick="vericarMateriaA()">Verificar</button>
+    <p id="resultPt"></p>
+
+    <label for="MateriaB"> <b>Metemática :</b> </label><br>
+    <input type="number" id="bimestre1m">
+    <input type="number" id="bimestre2m">
+    <input type="number" id="bimestre3m"><br>
+    <button onclick="vericarMateriaB()">Verificar</button>
+    <p id="resultMt"></p>
+
+    <label for="MateriaC"> <b>Inglês :</b> </label><br>
+    <input type="number" id="bimestre1i">
+    <input type="number" id="bimestre2i">
+    <input type="number" id="bimestre3i"><br>
+
+    <button onclick="vericarMateriaC()">Verificar</button>
+    <p id="resultIn"></p>
+
+    <script>
+
+        function vericarMateriaA() {
+            let bimestre1p = parseFloat(document.getElementById('bimestre1p').value);
+            let bimestre2p = parseFloat(document.getElementById('bimestre2p').value);
+            let bimestre3p = parseFloat(document.getElementById('bimestre3p').value);
+            let materiap = bimestre1p + bimestre2p + bimestre3p;
+            let resultPt = document.getElementById('resultPt');
+            let statusP;
+
+
+            if (materiap >= 60) {
+                statusP = "Você foi aprovado "
+
+
+            } else if (materiap < 60) {
+                statusP = " Você foi reprovado  "
+
+            }
+
+            resultPt.innerText = "Resultado final em Português: \n" +
+                "1ª Etapa:" + bimestre1p + " \n" +
+                "2ª Etapa:" + bimestre2p + " \n" +
+                "3ª Etapa:" + bimestre3p + " \n" +
+                "Total:" + materiap + " \n" +
+                "Status: " + statusP + " \n";
+        }
+
+
+        function vericarMateriaB() {
+            let bimestre1m = parseFloat(document.getElementById('bimestre1m').value);
+            let bimestre2m = parseFloat(document.getElementById('bimestre2m').value);
+            let bimestre3m = parseFloat(document.getElementById('bimestre3m').value);
+            let materiam = bimestre1m + bimestre2m + bimestre3m;
+            let resultMt = document.getElementById('resultMt');
+            let statusM;
+            if (materiam >= 60) {
+                statusM = "Você foi aprovado "
+            } else if (materiam < 60) {
+                statusM = " Você foi reprovado  "
+
+                resultMt.innerText = "Resultado final em matematíca: \n" +
+                    "1ª Etapa:" + bimestre1m + " \n" +
+                    "2ª Etapa:" + bimestre2m + " \n" +
+                    "3ª Etapa:" + bimestre3m + " \n" +
+                    "Total:" + materiam + " \n" +
+                    "Status: " + statusM + " \n";
+
+
+
+
+
+            }
+        }
+        function vericarMateriaC() {
+            let bimestre1i = parseFloat(document.getElementById('bimestre1i').value);
+            let bimestre2i = parseFloat(document.getElementById('bimestre2i').value);
+            let bimestre3i = parseFloat(document.getElementById('bimestre3i').value);
+            let materiai = bimestre1i + bimestre2i + bimestre3i;
+            let resultIn = document.getElementById('resultIn');
+            let statusI;
+            if (materiai >= 60) {
+                statusI = "Você foi aprovado "
+            } else if (materiai < 60) {
+                statusI = " Você foi reprovado  "
+
+
+
+
+                resultIn.innerText = "Resultado final em inglês: \n" +
+                    "1ª Etapa:" + bimestre1i + " \n" +
+                    "2ª Etapa:" + bimestre2i + " \n" +
+                    "3ª Etapa:" + bimestre3i + " \n" +
+                    "Total:" + materiai + " \n" +
+                    "Status: " + statusI + " \n";
+
+
+
+            }
+        }
+
+
+    </script>
+
+<!-- ATIVIDADE NÚMERO 6 -->
+
+    <label for="fatorial"> <b>Digite um número a ser fatoriado :</b> </label><br>
+    <input type="number" id="fat">
+    <button onclick="verificarfatorial()">Verificar</button>
+    <p id="resultfat"></p>
+
+
+
+
+    <script>
+        function verificarfatorial() {
+            let num = parseFloat(document.getElementById('fat').value);
+            resultfat.innerText = fatorial(num);
+        }
+        function fatorial(x) {
+            if (x == 0)
+                return 1;
+            else if (x <= 2)
+                return x;
+            else
+                return x * fatorial(x - 1)
+
+
+
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+<!-- ATIVIDADE NÚMERO 7 -->
+
+
+<label for="conategem"> <b>Digite um número a ser fatoriado :</b> </label><br>
+<input type="number" id="contador">
+<button onclick="verificarContador ()">Verificar</button>
+<p id="resultcont"></p>
+
+
+
+<script>
+function verificarContador(){
+let cont = parseFloat.getElementById('contador').value;
+let resultcont = document.getElementById('resultcont')
+
+
+for(cont <= 0 i--)
+
+
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
