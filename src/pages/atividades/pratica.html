@@ -252,25 +252,25 @@
 <!-- ATIVIDADE NÚMERO 7 -->
 
 
-<label for="conategem"> <b>Digite um número a ser fatoriado :</b> </label><br>
+<label for="contagem"> <b>contagem regressiva  :</b> </label><br>
 <input type="number" id="contador">
-<button onclick="verificarContador ()">Verificar</button>
+<button onclick="verificarContador()">Verificar</button>
 <p id="resultcont"></p>
-
-
 
 <script>
 function verificarContador(){
 let cont = parseFloat.getElementById('contador').value;
 let resultcont = document.getElementById('resultcont')
+let numeros = "";
 
 
-for(cont <= 0 i--)
-
-
-
+for (i=cont ; i!=0 ; i--){
+    i += i + ", ";
+    numeros = i;
 }
 
+document.getElementById('resultcont').innerText = numeros;
+}
 
 
 
