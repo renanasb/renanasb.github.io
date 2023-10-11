@@ -253,21 +253,21 @@
 
 
 <label for="contagem"> <b>contagem regressiva  :</b> </label><br>
-<input type="number" id="contador">
+<input type="text" id="contador">
 <button onclick="verificarContador()">Verificar</button>
 <p id="resultcont"></p>
 
 <script>
 function verificarContador(){
-let cont = parseFloat.getElementById('contador').value;
+let cont = contagem.value
+let contRegressiva = ""
 let resultcont = document.getElementById('resultcont')
 
 
-
-for (cont = 0 ; cont < 10 ;  cont--){
-resultcont.innerText =  cont + "/n";
-console.log()
+for ( let i = 0; i <= cont; i++){
+    contRegressiva += ( cont - i) + "\n"    
 }
+resultcont.innerText = contRegressiva;
 }
 
 
