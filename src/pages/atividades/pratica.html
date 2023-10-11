@@ -261,15 +261,13 @@
 function verificarContador(){
 let cont = parseFloat.getElementById('contador').value;
 let resultcont = document.getElementById('resultcont')
-let numeros = "";
 
 
-for (i=cont ; i!=0 ; i--){
-    i += i + ", ";
-    numeros = i;
+
+for (cont = 0 ; cont < 10 ;  cont--){
+resultcont.innerText =  cont + "/n";
+console.log()
 }
-
-document.getElementById('resultcont').innerText = numeros;
 }
 
 
