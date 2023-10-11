@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <!-- ATIVIDADE NUMERO 1 -->
     <label for="idade"> <b>Digite a idade:</b> </label><br>
     <input type="text" id="idade">
@@ -20,8 +19,6 @@
         function vericarIdade() {
             let idade = document.getElementById('idade').value;
             let resultado = document.getElementById('resultIdade');
-
-
             if (idade < 18) {
                 resultado.innerText = idade + " é menor de idade "
             } else if (idade >= 18 && idade <= 29) {
@@ -30,16 +27,9 @@
                 resultado.innerText = idade + " é um adulto  "
             } else if (idade >= 60) {
                 resultado.innerText = idade + " é um idoso  "
-
             }
-
         }
-
-
-
-
     </script>
-
     <!-- ATIVIDADE NUMERO 2 -->
     <label for="numero"> <b>Digite um número:</b> </label><br>
     <input type="number" id="numerox">
@@ -51,8 +41,6 @@
             let numerox = parseInt(document.getElementById('numerox').value);
             let numeroy = parseInt(document.getElementById('numeroy').value);
             let resultado = document.getElementById('resultNumero');
-
-
             if (numerox > numeroy) {
                 resultado.innerText = numerox + " é maior que  " + numeroy;
             } else if (numeroy > numerox) {
@@ -60,11 +48,8 @@
             } else if (numerox == numerox) {
                 resultado.innerText = numeroy + " são iguais  " + numerox;
             }
-
         }
-
     </script>
-
     <!-- ATIVIDADE NÚMERO 3 -->
     <label for="divisao"> <b>Digite o número a ser dividido :</b> </label><br>
     <input type="text" id="divisaoA">
@@ -83,8 +68,6 @@
             }
         }
     </script>
-
-
     <!-- ATIVIDADE NÚMERO 4 -->
     <label for="temperatura"> <b>Digite a temperatura :</b> </label><br>
     <input type="number" id="temperatura">
@@ -94,7 +77,6 @@
         function vericarTemperatura() {
             let temperatura = parseInt(document.getElementById('temperatura').value);
             let resultadoTp = document.getElementById('resulttm');
-
             if (temperatura < 20) {
                 resultadoTp.innerText = temperatura + " está frio "
             } else if (temperatura >= 20 && temperatura <= 25) {
@@ -103,34 +85,27 @@
                 resultadoTp.innerText = temperatura + " está quente  "
             }
         }
-
     </script>
     <!-- ATIVIDADE NÚMERO 5 -->
-
     <label for="MateriaA"> <b>Português :</b> </label><br>
     <input type="number" id="bimestre1p">
     <input type="number" id="bimestre2p">
     <input type="number" id="bimestre3p"><br>
     <button onclick="vericarMateriaA()">Verificar</button>
     <p id="resultPt"></p>
-
     <label for="MateriaB"> <b>Metemática :</b> </label><br>
     <input type="number" id="bimestre1m">
     <input type="number" id="bimestre2m">
     <input type="number" id="bimestre3m"><br>
     <button onclick="vericarMateriaB()">Verificar</button>
     <p id="resultMt"></p>
-
     <label for="MateriaC"> <b>Inglês :</b> </label><br>
     <input type="number" id="bimestre1i">
     <input type="number" id="bimestre2i">
     <input type="number" id="bimestre3i"><br>
-
     <button onclick="vericarMateriaC()">Verificar</button>
     <p id="resultIn"></p>
-
     <script>
-
         function vericarMateriaA() {
             let bimestre1p = parseFloat(document.getElementById('bimestre1p').value);
             let bimestre2p = parseFloat(document.getElementById('bimestre2p').value);
@@ -138,17 +113,12 @@
             let materiap = bimestre1p + bimestre2p + bimestre3p;
             let resultPt = document.getElementById('resultPt');
             let statusP;
-
-
             if (materiap >= 60) {
                 statusP = "Você foi aprovado "
-
-
             } else if (materiap < 60) {
                 statusP = " Você foi reprovado  "
 
             }
-
             resultPt.innerText = "Resultado final em Português: \n" +
                 "1ª Etapa:" + bimestre1p + " \n" +
                 "2ª Etapa:" + bimestre2p + " \n" +
@@ -156,8 +126,6 @@
                 "Total:" + materiap + " \n" +
                 "Status: " + statusP + " \n";
         }
-
-
         function vericarMateriaB() {
             let bimestre1m = parseFloat(document.getElementById('bimestre1m').value);
             let bimestre2m = parseFloat(document.getElementById('bimestre2m').value);
@@ -169,18 +137,12 @@
                 statusM = "Você foi aprovado "
             } else if (materiam < 60) {
                 statusM = " Você foi reprovado  "
-
                 resultMt.innerText = "Resultado final em matematíca: \n" +
                     "1ª Etapa:" + bimestre1m + " \n" +
                     "2ª Etapa:" + bimestre2m + " \n" +
                     "3ª Etapa:" + bimestre3m + " \n" +
                     "Total:" + materiam + " \n" +
                     "Status: " + statusM + " \n";
-
-
-
-
-
             }
         }
         function vericarMateriaC() {
@@ -194,10 +156,6 @@
                 statusI = "Você foi aprovado "
             } else if (materiai < 60) {
                 statusI = " Você foi reprovado  "
-
-
-
-
                 resultIn.innerText = "Resultado final em inglês: \n" +
                     "1ª Etapa:" + bimestre1i + " \n" +
                     "2ª Etapa:" + bimestre2i + " \n" +
@@ -209,20 +167,12 @@
 
             }
         }
-
-
     </script>
-
-<!-- ATIVIDADE NÚMERO 6 -->
-
+    <!-- ATIVIDADE NÚMERO 6 -->
     <label for="fatorial"> <b>Digite um número a ser fatoriado :</b> </label><br>
     <input type="number" id="fat">
     <button onclick="verificarfatorial()">Verificar</button>
     <p id="resultfat"></p>
-
-
-
-
     <script>
         function verificarfatorial() {
             let num = parseFloat(document.getElementById('fat').value);
@@ -235,71 +185,37 @@
                 return x;
             else
                 return x * fatorial(x - 1)
-
-
-
         }
-
-
-
-
+    </script>
+    <!-- ATIVIDADE NÚMERO 7 -->
+   
+    <label for="regressiva"><b>Regressiva a partir de:</b></label><br>
+    <input type="text" id="regressiva">
+    <button onclick="contRegredir()">Verificar </button>
+    <p id="resultRegressao"></p>
+    <script>
+        function contRegredir() {
+            let valor = regressiva.value;
+            let result = "";
+            for (let i = 0; i <= valor; i++) {
+                result += (valor - i) + "\n";
+            }
+            resultRegressao.innerText = result;
+        }
 
 
     </script>
 
-
-
-<!-- ATIVIDADE NÚMERO 7 -->
-
-
-<label for="contagem"> <b>contagem regressiva  :</b> </label><br>
-<input type="text" id="contador">
-<button onclick="verificarContador()">Verificar</button>
-<p id="resultcont"></p>
-
-
-
-        <label for="numRegressivo"><b>Regressiva a partir de:</b></label><br>
-        <input type="text" id="numRegressivo">
-        <button onclick="callRegredir()">Verificar </button>
-        
-        <p id="resultRegressao"></p>
-       
-        
-        
-<script>
-
-function callRegredir() {
-            let valor = numRegressivo.value;
-            let result ="";
-            for (let i = 0; i <= valor; i++) {
-                 result += (valor - i) + "\n"               ;
-            }
-            resultRegressao.innerText = result;
-
-
-        }
-
-
-</script>
-
-<!-- ATIVIDADE NÚMERO 8 -->
-        
-        <label for="numberTab"><b>Tabuada</b>:</label><br>
-        <input type="text" id="numberTab">
-        <button onclick="tabuada()">Verificar</button>
-
-        <p id="resultTabuada"></p>
-   
-
-
-
-
-<script>
-     function tabuada() {
+    <!-- ATIVIDADE NÚMERO 8 -->
+    <label for="numberTab"><b>Tabuada</b>:</label><br>
+    <input type="text" id="numberTab">
+    <button onclick="tabuada()">Verificar</button>
+    <p id="resultTabuada"></p>
+    <script>
+        function tabuada() {
             let concatValues = `TABUÁDA DO ${numberTab.value} \n`;
             for (let i = 0; i <= 10; i++) {
-                concatValues += `${numberTab.value} x ${i} = ${numberTab.value*i} \n`
+                concatValues += `${numberTab.value} x ${i} = ${numberTab.value * i} \n`
             }
             resultTabuada.innerText = concatValues;
         }
