@@ -257,25 +257,53 @@
 <button onclick="verificarContador()">Verificar</button>
 <p id="resultcont"></p>
 
+
+
+        <label for="numRegressivo"><b>Regressiva a partir de:</b></label><br>
+        <input type="text" id="numRegressivo">
+        <button onclick="callRegredir()">Verificar </button>
+        
+        <p id="resultRegressao"></p>
+       
+        
+        
 <script>
-function verificarContador(){
-let cont = contagem.value
-let contRegressiva = ""
-let resultcont = document.getElementById('resultcont')
+
+function callRegredir() {
+            let valor = numRegressivo.value;
+            let result ="";
+            for (let i = 0; i <= valor; i++) {
+                 result += (valor - i) + "\n"               ;
+            }
+            resultRegressao.innerText = result;
 
 
-for ( let i = 0; i <= cont; i++){
-    contRegressiva += ( cont - i) + "\n"    
-}
-resultcont.innerText = contRegressiva;
-}
-
-
-
+        }
 
 
 </script>
 
+<!-- ATIVIDADE NÚMERO 8 -->
+        
+        <label for="numberTab"><b>Tabuada</b>:</label><br>
+        <input type="text" id="numberTab">
+        <button onclick="tabuada()">Verificar</button>
+
+        <p id="resultTabuada"></p>
+   
+
+
+
+
+<script>
+     function tabuada() {
+            let concatValues = `TABUÁDA DO ${numberTab.value} \n`;
+            for (let i = 0; i <= 10; i++) {
+                concatValues += `${numberTab.value} x ${i} = ${numberTab.value*i} \n`
+            }
+            resultTabuada.innerText = concatValues;
+        }
+    </script>
 
 
 
