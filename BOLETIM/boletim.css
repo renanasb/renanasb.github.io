@@ -33,3 +33,9 @@ a{
     font-size: 25px;
     color: aliceblue; 
  }
+ .card{
+ width:700px ;
+height: 700px;
+margin-left: 590px;
+margin-right:590px ;
+ }
