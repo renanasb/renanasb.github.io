@@ -1,0 +1,35 @@
+body {
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+body {
+
+    background: #93B1A6;
+    text-align: center;
+
+}
+
+#central{
+margin-left: 780px;
+}
+
+.header {
+    background-color: #183D3D;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-left: 80px;
+    font-size: 20px;
+}
+#centrotext{
+font-size: 25px ;
+
+}
+a{
+    font-size: 25px;
+    color: aliceblue; 
+ }
