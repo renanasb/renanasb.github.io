@@ -1,14 +1,16 @@
 let materia = { id: 0, nome: "", notas: [], total: 0, printInfo: "" };
 let materias = [];
 let user = {nome: "",instituicao:"", curso:""};
+
 function save() {
     let inputNotas = [];
     let totalNotas = 0;
     user.nome = nomeUsuario.value;
     user.instituicao = nomeInstituicao.value;
     let resultados = `<b>BOLETIM DE: ${user.nome.toLocaleUpperCase()}</b><br><b>INSTITUIÇÃO/ESCOLA: ${user.instituicao.toLocaleUpperCase()} </b>`;
-
-    document.querySelectorAll("div.input-group input").forEach(e => {
+    
+    
+    document.querySelectorAll("div.input-group > input").forEach(e => {
         inputNotas.push(parseFloat(e.value))
         totalNotas += parseFloat(e.value);
     })
@@ -41,10 +43,12 @@ function save() {
 
     resultNotas.innerHTML = resultados;
 }
+
 function isAprovadoOuReprovado(valor) {
     if (valor >= 60) {
         return "APROVADO"
     } else {
         return "REPROVADO"
     }
+
 }
