@@ -35,16 +35,20 @@ a{
  .card{
  width:500px ;
  display: flex;
+
 /* height: 500px;
 margin-left:700px ; */
  }
  #display{
 display: flex;
 justify-content: space-evenly;
+
+
  }
  #display2  {
 display: flex;
 justify-content: space-evenly;
+
  }
 
  .input-group {
@@ -84,4 +88,10 @@ justify-content: space-evenly;
         font-size: 15px;
     
         }
-        
+      
+body {
+  background-image: url('../../../imagens/DreamShaper_v7_estrelado_liso_4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
