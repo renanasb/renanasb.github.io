@@ -9,7 +9,19 @@ function save() {
     user.instituicao = nomeInstituicao.value;
     let resultados = `<b>BOLETIM DE: ${user.nome.toLocaleUpperCase()}</b><br><b>INSTITUIÇÃO/ESCOLA: ${user.instituicao.toLocaleUpperCase()} </b>`;
     
-    
+    for (let i = 0; i < inputNotas.length; i++) {
+        const element = inputNotas[i];
+        if (i > 20) {
+            
+        } else {
+            
+        }
+    }
+
+
+
+
+
     document.querySelectorAll("div.input-group > input").forEach(e => {
         inputNotas.push(parseFloat(e.value))
         totalNotas += parseFloat(e.value);
