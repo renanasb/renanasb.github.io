@@ -9,14 +9,6 @@ function save() {
     user.instituicao = nomeInstituicao.value;
     let resultados = `<b>BOLETIM DE: ${user.nome.toLocaleUpperCase()}</b><br><b>INSTITUIÇÃO/ESCOLA: ${user.instituicao.toLocaleUpperCase()} </b>`;
     
-    for (let i = 0; i < inputNotas.length; i++) {
-        const element = inputNotas[i];
-        if (i > 20) {
-            
-        } else {
-            
-        }
-    }
 
 
 
@@ -46,7 +38,7 @@ function save() {
                     `
         }
     )
-
+    
     console.log(materias)
 
     materias.forEach(e => {
