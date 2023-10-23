@@ -1,5 +1,5 @@
 function header() {
-    headerrElement.innerHTML = ` <header>
+    headerrElement.innerHTML = `  <header>
     <nav class="navbar navbar-expand-lg bg-success">
         <div class="container-fluid">
             <a class="navbar-brand" href="./header.html"><b>início</b></a>
@@ -11,7 +11,7 @@ function header() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../Renan.html"><b>Sobre mim</b> </a>
+                        <a class="nav-link active" aria-current="page" href="./pagina.html"><b>Sobre mim</b> </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../objetivos.html"><b>Objetivo</b></a>
