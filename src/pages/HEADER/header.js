@@ -1,6 +1,6 @@
 function header() {
     headerrElement.innerHTML = `  <header>
-    <nav class="navbar navbar-expand-lg bg-success">
+    <nav class="navbar navbar-expand-lg " id="cor-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="./header.html"><b>início</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -14,7 +14,7 @@ function header() {
                         <a class="nav-link active" aria-current="page" href="./pagina.html"><b>Sobre mim</b> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../objetivos.html"><b>Objetivo</b></a>
+                        <a class="nav-link active" aria-current="page" href="./objetivo.html"><b>Objetivo</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Artigo.html"> <b>Artigo</b> </a>
@@ -50,7 +50,7 @@ function header() {
 
 
 function footer() {
-    footerrElement.innerHTML =`<footer class=" fixed-bottom   mt-4 text-center bg-success "> RENAN ALVES </footer>
+    footerrElement.innerHTML =`<footer class=" fixed-bottom   mt-4 text-center "  id="cor-navbar"> RENAN ALVES </footer>
     `
 }
 
