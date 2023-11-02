@@ -1,5 +1,3 @@
-import {controller } from "./src/controller.js";
-document.addEventListener('DOMContentLoaded', ()=>{
-    controller.iniciar();
-})
+import { controller } from "./src/controller.js";
 
+controller.iniciar();
