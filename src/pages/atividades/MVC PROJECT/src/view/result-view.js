@@ -15,6 +15,7 @@ const resultView = {
             </tr>
         </thead>
         <tbody id="users-result">
+
         </tbody>
     `;
     root.appendChild(tableResult);
@@ -23,7 +24,8 @@ const resultView = {
     const tRBody = document.getElementById("users-result");
     tRBody.innerHTML = ``;
     for (let i = 0; i < params.length; i++) {
-      const newLine = document.createElement("tr")
+      const newLine = document.createElement("tr");
+      newLine.className= 'row-line'
       newLine.innerHTML = `
         <th scope="row">#${i+1}</th> 
              
