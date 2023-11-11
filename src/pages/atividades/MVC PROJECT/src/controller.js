@@ -13,6 +13,7 @@ const handleSubmit = (event) => {
     addUser(user);
   } else if (submitState == submitType.UPDATE) {
     updateUser(currentId, user);
+  }else {
   }
   viewController.update(data, new Usuario("", null, "", ""));
 };
@@ -32,7 +33,7 @@ const deletUser = (index) => {
 const clickEsquerdo = (event) => {
   currentId = event.target.closest("tr").id.split("")[4];
   const atualizar  =  window.confirm(
-    `você realmente deseja fazer alterações no usário ${data[currentId]
+    `você realmente deseja fazer alterações no usário: ${data[currentId]
       .getNome()
       .toUpperCase()} será carregado para edição`
   );
@@ -49,7 +50,7 @@ const clickDireito = (event) => {
   if (event.button == 2) {
     currentId = event.target.closest("tr").id.split("")[4];
     const valorComfirmacao = window.confirm(
-      `Opção deletar, você realmente deseja deletar o usuário ${data[currentId]
+      `Opção deletar, você realmente deseja deletar o usuário: ${data[currentId]
         .getNome()
         .toUpperCase()}?`
     );
